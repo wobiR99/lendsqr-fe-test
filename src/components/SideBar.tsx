@@ -109,7 +109,7 @@ const SideBar = () => {
 
       <ul
         className={`${
-          users === null && "absolute bottom-[19px]"
+          users !== null && "absolute bottom-[19px]"
         } flex flex-col justify-center items-start `}
       >
         <li
