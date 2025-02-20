@@ -8,7 +8,7 @@ const GeneralDetails = ({ userDetails }: { userDetails: User }) => {
           Personal Information
         </h3>
 
-        <div className="grid sm:grid-cols-5 grid-cols-2 gap-x-[100px] gap-y-[30px] ">
+        <div className="grid sm:grid-cols-5 grid-cols-2 sm:gap-x-[100px] gap-x-4 gap-y-[30px] ">
           <aside className="flex flex-col gap-2">
             <p className="text-xs font-medium text-[#545F7D]">FULL NAME</p>
             <p className="text-base font-medium text-[#545F7D]">
@@ -23,7 +23,7 @@ const GeneralDetails = ({ userDetails }: { userDetails: User }) => {
           </aside>
           <aside className="flex flex-col gap-2">
             <p className="text-xs font-medium text-[#545F7D]">EMAIL ADDRESS</p>
-            <p className="text-base font-medium text-[#545F7D]">
+            <p className="text-base font-medium text-[#545F7D] truncate">
               {userDetails.email}
             </p>
           </aside>
@@ -66,7 +66,7 @@ const GeneralDetails = ({ userDetails }: { userDetails: User }) => {
           Education and Employment
         </h3>
 
-        <div className="grid sm:grid-cols-4 grid-cols-2 gap-x-[100px] gap-y-[30px] ">
+        <div className="grid sm:grid-cols-4 grid-cols-2  sm:gap-x-[100px] gap-x-4 gap-y-[30px] ">
           <aside className="flex flex-col gap-2">
             <p className="text-xs font-medium text-[#545F7D]">
               LEVEL OF EDUCATION
@@ -103,7 +103,7 @@ const GeneralDetails = ({ userDetails }: { userDetails: User }) => {
           </aside>
           <aside className="flex flex-col gap-2">
             <p className="text-xs font-medium text-[#545F7D]">OFFICE EMAIL</p>
-            <p className="text-base font-medium text-[#545F7D]">
+            <p className="text-base font-medium text-[#545F7D] truncate">
               {userDetails.officeEmail}
             </p>
           </aside>
@@ -126,7 +126,7 @@ const GeneralDetails = ({ userDetails }: { userDetails: User }) => {
       <div className="flex flex-col gap-[30px] py-7 border-b-[2px]">
         <h3 className="text-base text-[#213F7D] font-medium">Socials</h3>
 
-        <div className="grid grid-cols-4 gap-x-[100px] gap-y-[30px] ">
+        <div className="grid sm:grid-cols-4 grid-cols-2 gap-x-[100px] gap-y-[30px] ">
           <aside className="flex flex-col gap-2">
             <p className="text-xs font-medium text-[#545F7D]">TWITTER</p>
             <p className="text-base font-medium text-[#545F7D]">
@@ -150,7 +150,7 @@ const GeneralDetails = ({ userDetails }: { userDetails: User }) => {
       <div className="flex flex-col gap-[30px] py-7 ">
         <h3 className="text-base text-[#213F7D] font-medium">Guarantors</h3>
 
-        <div className="grid sm:grid-cols-4 grid-cols-2 gap-x-[100px] gap-y-[30px] ">
+        <div className="grid sm:grid-cols-4 grid-cols-2  sm:gap-x-[100px] gap-x-4 gap-y-[30px] ">
           <aside className="flex flex-col gap-2">
             <p className="text-xs font-medium text-[#545F7D]">FULL NAME</p>
             <p className="text-base font-medium text-[#545F7D]">
@@ -165,7 +165,7 @@ const GeneralDetails = ({ userDetails }: { userDetails: User }) => {
           </aside>
           <aside className="flex flex-col gap-2">
             <p className="text-xs font-medium text-[#545F7D]">EMAIL ADDRESS</p>
-            <p className="text-base font-medium text-[#545F7D]">
+            <p className="text-base font-medium text-[#545F7D] truncate">
               {userDetails.guarantorEmail}
             </p>
           </aside>

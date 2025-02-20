@@ -59,15 +59,17 @@ const DashboardUser = () => {
     return <div>{error}</div>;
   }
   return (
-    <section className="flex flex-col gap-10 p-[60px] ">
+    <section className="flex flex-col gap-10 sm:p-[60px] p-4 ">
       <div>
-        <h1 className="text-2xl font-medium text-[#213F7D]">User</h1>
+        <h1 className="text-2xl max-sm:text-center font-medium text-[#213F7D]">
+          User
+        </h1>
       </div>
 
       {/* Dummy Data for UI */}
       {/* section for cards */}
       <section className="flex flex-col sm:flex-row gap-[26px] ">
-        <div className="flex  flex-col gap-[14px] pt-5 pb-[30px] px-[30px]  sm:w-[240px] w-full rounded-[4px] shadow-lg">
+        <div className="flex  flex-col max-sm:justify-center max-sm:items-center gap-[14px] pt-5 pb-[30px] px-[30px]  sm:w-[240px] w-full rounded-[4px] shadow-lg">
           <div className="rounded-full w-10 h-10  bg-[#DF18FF] bg-opacity-10 flex items-center justify-center">
             <img src={card_users} className="w-[22px] h-[22px] " />
           </div>
@@ -78,7 +80,7 @@ const DashboardUser = () => {
             {data?.length ?? 0}
           </p>
         </div>
-        <div className="flex  flex-col gap-[14px] pt-5 pb-[30px] px-[30px]  sm:w-[240px] w-full rounded-[4px] shadow-lg">
+        <div className="flex  flex-col max-sm:justify-center max-sm:items-center gap-[14px] pt-5 pb-[30px] px-[30px]  sm:w-[240px] w-full rounded-[4px] shadow-lg">
           <div className="rounded-full w-10 h-10  bg-[#5718FF] bg-opacity-10 flex items-center justify-center">
             <img src={card_active_users} className="w-[22px] h-[22px] " />
           </div>
@@ -89,7 +91,7 @@ const DashboardUser = () => {
             {data?.filter((user) => user?.userStatus === "Active").length}
           </p>
         </div>
-        <div className="flex  flex-col gap-[14px] pt-5 pb-[30px] px-[30px]  sm:w-[240px] w-full rounded-[4px] shadow-lg">
+        <div className="flex  flex-col max-sm:justify-center max-sm:items-center gap-[14px] pt-5 pb-[30px] px-[30px]  sm:w-[240px] w-full rounded-[4px] shadow-lg">
           <div className="rounded-full w-10 h-10  bg-[#F55F44] bg-opacity-10 flex items-center justify-center">
             <img src={users_loans} className="w-[22px] h-[22px] " />
           </div>
@@ -103,7 +105,7 @@ const DashboardUser = () => {
             {data?.filter((user) => user?.loanRepayment > 0).length}
           </p>
         </div>
-        <div className="flex  flex-col gap-[14px] pt-5 pb-[30px] px-[30px]  sm:w-[240px] w-full rounded-[4px] shadow-lg">
+        <div className="flex  flex-col max-sm:justify-center max-sm:items-center gap-[14px] pt-5 pb-[30px] px-[30px]  sm:w-[240px] w-full rounded-[4px] shadow-lg">
           <div className="rounded-full w-10 h-10  bg-[#FF3366] bg-opacity-10 flex items-center justify-center">
             <img src={users_savings} className="w-[22px] h-[22px] " />
           </div>

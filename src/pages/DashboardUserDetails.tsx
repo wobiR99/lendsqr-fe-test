@@ -40,7 +40,7 @@ const DashboardUserDetails = () => {
   }, []);
 
   return (
-    <section className="w-full p-[60px] pb-[137px] flex flex-col gap-8">
+    <section className="w-full sm:p-[60px] p-4 sm:pb-[137px] flex flex-col gap-8">
       <p
         onClick={() => navigate(-1)}
         className="text-base hidden text-[#545F7D] sm:flex gap-3 items-center cursor-pointer"
