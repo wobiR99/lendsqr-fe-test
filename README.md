@@ -3,7 +3,7 @@
 This repository contains my submission for the Lendsqr Frontend Engineering test. The project was built using React and follows best practices for clean, maintainable code.
 
 ## 🚀 Live Demo
-[Live Demo URL](https://your-live-demo.com)  
+[Live Demo URL](https://obi-ifeanyi-lendsqr-fe-test.vercel.app/)  
 
 ## 📸 Screenshots
 ![Dashboard Desktop View](https://github.com/user-attachments/assets/dfaa8532-1c82-48eb-8ef2-7a67d0fb3ce0)  
