@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { formatDate } from "../utils";
 import { Color, User } from "../utils/interface.types";
 import { Link } from "react-router-dom";
+import { arrow_bold, options, view_details } from "../assets";
 
 const TableRow = ({ item }: { item: User }) => {
   const [showMoreInfo, setShowMoreInfo] = useState<boolean>(false);
@@ -46,7 +47,7 @@ const TableRow = ({ item }: { item: User }) => {
           <p className="text-sm font-normal text-[#545F7D]">{item?.name}</p>
         </div>
         <div onClick={() => setShowMoreInfo((prev) => !prev)}>
-          <img src="/src/assets/arrow_bold.png" className="w-2 h-1" />
+          <img src={arrow_bold} className="w-2 h-1" />
         </div>
       </td>
 
@@ -91,7 +92,7 @@ const TableRow = ({ item }: { item: User }) => {
         </div>
         <div className="relative">
           <div onClick={() => setShowDropdown(true)} className="cursor-pointer">
-            <img src="/src/assets/options.png" className="w-5 h-5" />
+            <img src={options} className="w-5 h-5" />
           </div>
 
           {showDropdown && (
@@ -102,23 +103,20 @@ const TableRow = ({ item }: { item: User }) => {
               <Link to={`/dashboard/users/${item?.id}`}>
                 <p className="text-sm font-medium text-[#545F7D] flex items-center gap-2">
                   <span>
-                    <img
-                      src="/src/assets/view_details.png"
-                      className="w-4 h-4"
-                    />
+                    <img src={view_details} className="w-4 h-4" />
                   </span>
                   View Details
                 </p>
               </Link>
               <p className="text-sm font-medium text-[#545F7D] flex items-center gap-2">
                 <span>
-                  <img src="/src/assets/view_details.png" className="w-4 h-4" />
+                  <img src={view_details} className="w-4 h-4" />
                 </span>
                 Blacklist User
               </p>
               <p className="text-sm font-medium text-[#545F7D] flex items-center gap-2">
                 <span>
-                  <img src="/src/assets/view_details.png" className="w-4 h-4" />
+                  <img src={view_details} className="w-4 h-4" />
                 </span>
                 Activate User
               </p>
@@ -196,7 +194,7 @@ const TableRow = ({ item }: { item: User }) => {
                 onClick={() => setShowDropdown(true)}
                 className="cursor-pointer"
               >
-                <img src="/src/assets/options.png" className="w-5 h-5" />
+                <img src={options} className="w-5 h-5" />
               </div>
 
               {showDropdown && (
@@ -207,29 +205,20 @@ const TableRow = ({ item }: { item: User }) => {
                   <Link to={`/dashboard/users/${item.id}`}>
                     <p className="text-sm font-medium text-[#545F7D] flex items-center gap-2">
                       <span>
-                        <img
-                          src="/src/assets/view_details.png"
-                          className="w-4 h-4"
-                        />
+                        <img src={view_details} className="w-4 h-4" />
                       </span>
                       View Details
                     </p>
                   </Link>
                   <p className="text-sm font-medium text-[#545F7D] flex items-center gap-2">
                     <span>
-                      <img
-                        src="/src/assets/view_details.png"
-                        className="w-4 h-4"
-                      />
+                      <img src={view_details} className="w-4 h-4" />
                     </span>
                     Blacklist User
                   </p>
                   <p className="text-sm font-medium text-[#545F7D] flex items-center gap-2">
                     <span>
-                      <img
-                        src="/src/assets/view_details.png"
-                        className="w-4 h-4"
-                      />
+                      <img src={view_details} className="w-4 h-4" />
                     </span>
                     Activate User
                   </p>

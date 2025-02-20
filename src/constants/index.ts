@@ -1,92 +1,114 @@
-export const customerOptions = [
+import {
+  audit_logs,
+  decision,
+  fees,
+  fees_pricing,
+  guarantors,
+  karma,
+  loans,
+  messages,
+  preferences,
+  reports,
+  savingProduct,
+  savings,
+  service_account,
+  services,
+  settlements,
+  switchImg,
+  transaction,
+  users,
+  whitelist,
+} from "../assets";
+
+export const customerOptions: { option: string; icon: string }[] = [
   {
     option: "Users",
-    icon: "/src/assets/users.png",
+    icon: users,
   },
   {
     option: "Guarantors",
-    icon: "/src/assets/guarantors.png",
+    icon: guarantors,
   },
   {
     option: "Loans",
-    icon: "/src/assets/loans.png",
+    icon: loans,
   },
   {
     option: "Decision Models",
-    icon: "/src/assets/decision.png",
+    icon: decision,
   },
   {
     option: "Savings",
-    icon: "/src/assets/savings.png",
+    icon: savings,
   },
   {
     option: "Loan Requests",
-    icon: "/src/assets/loans.png",
+    icon: loans,
   },
   {
     option: "Whitelist",
-    icon: "/src/assets/whitelist.png",
+    icon: whitelist,
   },
   {
     option: "Karma",
-    icon: "/src/assets/karma.png",
+    icon: karma,
   },
 ];
 
 export const businessOptions = [
   {
     option: "Organization",
-    icon: "/src/assets/switch.png",
+    icon: switchImg,
   },
   {
     option: "Loan Products",
-    icon: "/src/assets/loans.png",
+    icon: loans,
   },
   {
     option: "Savings Products",
-    icon: "/src/assets/savingProduct.png",
+    icon: savingProduct,
   },
   {
     option: "Fees and Charges",
-    icon: "/src/assets/fees.png",
+    icon: fees,
   },
   {
     option: "Transactions",
-    icon: "/src/assets/transaction.png",
+    icon: transaction,
   },
   {
     option: "Services",
-    icon: "/src/assets/services.png",
+    icon: services,
   },
   {
     option: "Service Account",
-    icon: "/src/assets/service_account.png",
+    icon: service_account,
   },
   {
     option: "Settlements",
-    icon: "/src/assets/settlements.png",
+    icon: settlements,
   },
   {
     option: "Reports",
-    icon: "/src/assets/reports.png",
+    icon: reports,
   },
 ];
 
 export const settingsOption = [
   {
     option: "Preferences",
-    icon: "/src/assets/preferences.png",
+    icon: preferences,
   },
   {
     option: "Fees and Pricing",
-    icon: "/src/assets/fees_pricing.png",
+    icon: fees_pricing,
   },
   {
     option: "Audit Logs",
-    icon: "/src/assets/audit_logs.png",
+    icon: audit_logs,
   },
   {
     option: "Systems Messages",
-    icon: "/src/assets/messages.png",
+    icon: messages,
   },
 ];

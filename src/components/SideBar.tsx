@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { businessOptions, customerOptions, settingsOption } from "../constants";
+import { arrow, home, logout, search, switchImg } from "../assets";
 
 const SideBar = () => {
   const isActive = false;
@@ -14,25 +15,22 @@ const SideBar = () => {
           className="rounded-l-lg border border-[#545F7D] border-opacity-15 w-full py-2 px-4  focus:outline-none placeholder:font-normal placeholder:text-sm placeholder:opacity-60"
         />
         <div className="flex justify-center items-center bg-[#39CDCC] py-[13px] px-5 rounded-r-lg ">
-          <img
-            src="/src/assets/search.png"
-            className="w-[14px] h-[14px] object-contain"
-          />
+          <img src={search} className="w-[14px] h-[14px] object-contain" />
         </div>
       </div>
       <ul className="flex flex-col justify-center items-start gap-10">
         <li className="flex items-center justify-center gap-2 py-10 px-4">
-          <img src="/src/assets/switch.png" className="w-[14px] h-[14px]" />
+          <img src={switchImg} className="w-[14px] h-[14px]" />
           <p className="flex items-center justify-center gap-2 text-base text-[#213F7D] ">
             Switch Organization{" "}
             <span>
-              <img src="/src/assets/arrow.png" className="w-[14px] h-[14px]" />
+              <img src={arrow} className="w-[14px] h-[14px]" />
             </span>
           </p>
         </li>
 
         <li className="flex items-center justify-center gap-2 pb-10 px-4">
-          <img src="/src/assets/home.png" className="w-[14px] h-[14px]" />
+          <img src={home} className="w-[14px] h-[14px]" />
           <p className="flex items-center justify-center gap-2 text-base text-[#213F7D] ">
             Dashboard
           </p>
@@ -117,7 +115,7 @@ const SideBar = () => {
            flex items-center w-full justify-start gap-2 py-2 px-4 cursor-pointer`}
           onClick={() => navigate("/")}
         >
-          <img src="/src/assets/logout.png" className="w-[14px] h-[14px]" />
+          <img src={logout} className="w-[14px] h-[14px]" />
           <p className="flex items-center justify-center gap-2 text-base text-[#213F7D] ">
             Logout
           </p>

@@ -7,6 +7,7 @@ import Savings from "../components/Savings";
 import AppAndSystem from "../components/AppAndSystem";
 import { useEffect, useState } from "react";
 import { User } from "../utils/interface.types";
+import { goback, user_placeholder } from "../assets";
 
 const DashboardUserDetails = () => {
   const { id } = useParams();
@@ -45,12 +46,12 @@ const DashboardUserDetails = () => {
         className="text-base hidden text-[#545F7D] sm:flex gap-3 items-center cursor-pointer"
       >
         <span>
-          <img src="/src/assets/goback.png" className="w-[30px] h-[30px]" />
+          <img src={goback} className="w-[30px] h-[30px]" />
         </span>
         Back to Users
       </p>
       <div className="sm:hidden cursor-pointer" onClick={() => navigate(-1)}>
-        <img src="/src/assets/goback.png" className="w-[30px] h-[30px]" />
+        <img src={goback} className="w-[30px] h-[30px]" />
       </div>
       <div className="flex flex-col gap-4 sm:gap-0 sm:flex-row sm:justify-between">
         <h3 className="text-2xl font-medium text-[#213F7D] self-center">
@@ -71,10 +72,7 @@ const DashboardUserDetails = () => {
         <div className="flex flex-col sm:flex-row sm:gap-[30px] gap-0">
           <div className="flex items-center gap-5">
             <div className="rounded-full flex justify-center items-center sm:w-[100px] sm:h-[100px] w-[50px] h-[50px] bg-[#213F7D] bg-opacity-10">
-              <img
-                src="/src/assets/user_placeholder.png"
-                className="sm:w-10 sm:h-10 w-5 h-5"
-              />
+              <img src={user_placeholder} className="sm:w-10 sm:h-10 w-5 h-5" />
             </div>
             <aside className="flex flex-col gap-[10px]">
               <h4 className="sm:text-[22px] text-sm text-[#213F7D] font-medium">

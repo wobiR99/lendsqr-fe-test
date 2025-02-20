@@ -2,6 +2,13 @@ import { useEffect, useState } from "react";
 import { User } from "../utils/interface.types";
 import TableRow from "../components/TableRow";
 import Pagination from "../components/Pagination";
+import {
+  card_active_users,
+  card_users,
+  filter,
+  users_loans,
+  users_savings,
+} from "../assets";
 
 const DashboardUser = () => {
   const header = [
@@ -62,10 +69,7 @@ const DashboardUser = () => {
       <section className="flex flex-col sm:flex-row gap-[26px] ">
         <div className="flex  flex-col gap-[14px] pt-5 pb-[30px] px-[30px]  sm:w-[240px] w-full rounded-[4px] shadow-lg">
           <div className="rounded-full w-10 h-10  bg-[#DF18FF] bg-opacity-10 flex items-center justify-center">
-            <img
-              src="/src/assets/cards/users.png"
-              className="w-[22px] h-[22px] "
-            />
+            <img src={card_users} className="w-[22px] h-[22px] " />
           </div>
 
           <p className="text-sm font-medium text-[#545F7D] ">USERS</p>
@@ -76,10 +80,7 @@ const DashboardUser = () => {
         </div>
         <div className="flex  flex-col gap-[14px] pt-5 pb-[30px] px-[30px]  sm:w-[240px] w-full rounded-[4px] shadow-lg">
           <div className="rounded-full w-10 h-10  bg-[#5718FF] bg-opacity-10 flex items-center justify-center">
-            <img
-              src="/src/assets/cards/active_users.png"
-              className="w-[22px] h-[22px] "
-            />
+            <img src={card_active_users} className="w-[22px] h-[22px] " />
           </div>
 
           <p className="text-sm font-medium text-[#545F7D] ">ACTIVE USERS</p>
@@ -90,10 +91,7 @@ const DashboardUser = () => {
         </div>
         <div className="flex  flex-col gap-[14px] pt-5 pb-[30px] px-[30px]  sm:w-[240px] w-full rounded-[4px] shadow-lg">
           <div className="rounded-full w-10 h-10  bg-[#F55F44] bg-opacity-10 flex items-center justify-center">
-            <img
-              src="/src/assets/cards/users_loans.png"
-              className="w-[22px] h-[22px] "
-            />
+            <img src={users_loans} className="w-[22px] h-[22px] " />
           </div>
 
           <p className="text-sm font-medium text-[#545F7D] ">
@@ -107,10 +105,7 @@ const DashboardUser = () => {
         </div>
         <div className="flex  flex-col gap-[14px] pt-5 pb-[30px] px-[30px]  sm:w-[240px] w-full rounded-[4px] shadow-lg">
           <div className="rounded-full w-10 h-10  bg-[#FF3366] bg-opacity-10 flex items-center justify-center">
-            <img
-              src="/src/assets/cards/users_savings.png"
-              className="w-[22px] h-[22px] "
-            />
+            <img src={users_savings} className="w-[22px] h-[22px] " />
           </div>
 
           <p className="text-sm font-medium text-[#545F7D] ">
@@ -134,7 +129,7 @@ const DashboardUser = () => {
                   <p className="text-xs font-semibold text-[#545F7D] flex gap-[10px]">
                     USERNAME
                     <span>
-                      <img src="/src/assets/filter.png" className="w-4 h-4" />
+                      <img src={filter} className="w-4 h-4" />
                     </span>
                   </p>
                 </div>
@@ -161,10 +156,7 @@ const DashboardUser = () => {
                       <p className="text-xs max-sm:hidden font-semibold text-[#545F7D] flex gap-[10px]">
                         {item}
                         <span>
-                          <img
-                            src="/src/assets/filter.png"
-                            className="w-4 h-4"
-                          />
+                          <img src={filter} className="w-4 h-4" />
                         </span>
                       </p>
                     </div>

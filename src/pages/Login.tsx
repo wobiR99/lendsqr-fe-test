@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { loginImage, logo } from "../assets";
 
 const Login = () => {
   const [isClicked, setIsClicked] = useState<Boolean>(false); //toggle visibility of password
@@ -11,12 +12,12 @@ const Login = () => {
   return (
     <section className="flex w-screen h-screen">
       <div className="w-1/2  h-full flex flex-col gap-[139px] items-center justify-center max-sm:hidden">
-        <img src="/src/assets/logo.png" className="self-start pl-[97px]" />
-        <img src="/src/assets/login/loginImage.png" />
+        <img src={logo} className="self-start pl-[97px]" />
+        <img src={loginImage} />
       </div>
 
       <div className="sm:w-1/2 w-full flex flex-col gap-16 justify-center items-center px-24 shadow-lg">
-        <img src="/src/assets/logo.png" className="sm:hidden" />
+        <img src={logo} className="sm:hidden" />
         <aside className="flex flex-col gap-4 w-full justify-center items-center sm:items-start">
           <h1 className="font-bold text-[40px] text-[#213F7D] ">Welcome!</h1>
           <p className="font-normal text-[20px] text-[#545F7D] ">

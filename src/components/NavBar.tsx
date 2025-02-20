@@ -2,6 +2,17 @@ import { useState } from "react";
 import { businessOptions, customerOptions, settingsOption } from "../constants";
 import Searchbar from "./Searchbar";
 import { useNavigate } from "react-router-dom";
+import {
+  arrow,
+  arrow_bold,
+  bells,
+  hamburger,
+  home,
+  logo,
+  logout,
+  profile,
+  switchImg,
+} from "../assets";
 
 const NavBar = () => {
   const isActive = false;
@@ -10,12 +21,12 @@ const NavBar = () => {
   return (
     <header className="flex gap- justify-between items-center p-[30px] pr-[60px] shadow-lg relative">
       <img
-        src="/src/assets/hamburger.png"
+        src={hamburger}
         className="h-[30px] w-[30px] sm:hidden"
         onClick={() => setShowSidebar((prev) => !prev)}
       />
       <img
-        src="/src/assets/logo.png"
+        src={logo}
         className="sm:w-[145px] w-[90px] object-contain h-[30px]"
       />
 
@@ -29,20 +40,14 @@ const NavBar = () => {
           </h3>
 
           <aside className="flex gap-[30px]">
-            <img
-              src="/src/assets/bell.png"
-              className="w-[26px] h-[26px] self-center"
-            />
+            <img src={bells} className="w-[26px] h-[26px] self-center" />
             <div className="flex gap-[10px] ">
-              <img
-                src="/src/assets/profile.png"
-                className="w-12 h-12 rounded-full"
-              />
+              <img src={profile} className="w-12 h-12 rounded-full" />
 
               <small className="font-normal text-base text-[#213F7D] flex gap-1 justify-center items-center">
                 Adedeji{" "}
                 <span>
-                  <img src="/src/assets/arrow_bold.png" className="w-2 h-1" />
+                  <img src={arrow_bold} className="w-2 h-1" />
                 </span>
               </small>
             </div>
@@ -51,10 +56,7 @@ const NavBar = () => {
 
         <div className="sm:hidden relative">
           <div className="flex items-center gap-1 ">
-            <img
-              src="/src/assets/profile.png"
-              className={`w-8 h-8 rounded-full `}
-            />
+            <img src={profile} className={`w-8 h-8 rounded-full `} />
           </div>
         </div>
       </div>
@@ -70,20 +72,17 @@ const NavBar = () => {
           <Searchbar />
           <ul className="flex flex-col justify-center items-start gap-10">
             <li className="flex items-center justify-center gap-2 py-10 px-4">
-              <img src="/src/assets/switch.png" className="w-[14px] h-[14px]" />
+              <img src={switchImg} className="w-[14px] h-[14px]" />
               <p className="flex items-center justify-center gap-2 text-base text-[#213F7D] ">
                 Switch Organization{" "}
                 <span>
-                  <img
-                    src="/src/assets/arrow.png"
-                    className="w-[14px] h-[14px]"
-                  />
+                  <img src={arrow} className="w-[14px] h-[14px]" />
                 </span>
               </p>
             </li>
 
             <li className="flex items-center justify-center gap-2 pb-10 px-4">
-              <img src="/src/assets/home.png" className="w-[14px] h-[14px]" />
+              <img src={home} className="w-[14px] h-[14px]" />
               <p className="flex items-center justify-center gap-2 text-base text-[#213F7D] ">
                 Dashboard
               </p>
@@ -161,7 +160,7 @@ const NavBar = () => {
            flex items-center w-full justify-start gap-2 py-2 px-4 cursor-pointer`}
               onClick={() => navigate("/")}
             >
-              <img src="/src/assets/logout.png" className="w-[14px] h-[14px]" />
+              <img src={logout} className="w-[14px] h-[14px]" />
               <p className="flex items-center justify-center gap-2 text-base text-[#213F7D] ">
                 Logout
               </p>
